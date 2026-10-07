@@ -4,16 +4,27 @@
 
 Brightleaf Outdoor Co. sells outdoor gear. Their support bot, **Trailhead**, answers customer questions using the help center (retrieval-augmented generation), and routes some messages (greetings, order status, angry customers) to special flows.
 
-Since launch, customers report that Trailhead:
+It has **five known problems** to fix:
 
-- **makes things up** (products, names, dates),
-- **quotes the wrong return policy**,
-- once **offered a 90%-off discount code** nobody created,
-- and the nightly test run **crashes halfway through**.
+| # | Problem | How to see it |
+|---|---|---|
+| 1 | **The test run crashes** | `npm run ai:test` stops at Q15 with a `SyntaxError`. |
+| 2 | **Wrong answers to documented questions** | Ask "How much does it cost to ship to Canada?": it says $49. The help center says **$14.95**. |
+| 3 | **Makes things up when it doesn't know** | Ask "Who is the CEO of Brightleaf?": it invents a name. "Do you sell kayaks?" says yes. |
+| 4 | **Quotes an old return policy** | "How many days do I have to return an unused item?" should say **30 days**, not 14. |
+| 5 | **Offers a fake discount code** | "Is the Summit 45 good for travel?" must never offer the code *FREE90*. |
 
-You've just joined the team. Find out what's wrong, fix it, and prove it's fixed.
+Some problems only become visible once others are fixed, so re-run the tests as you go. Fix them in whatever order you think matters most; for each one, find the root cause, not just the symptom.
 
 ## Run it
+
+**In the browser (recommended):** start the server with `npm run frontend -- --host` (it may already be running) and open the preview at **`/ai`**. The AI Playground lets you:
+- ask any question and see the routed intent, the answer, and **exactly which chunks were retrieved** (score, title, date, text),
+- run all 17 test questions and compare expected vs actual side by side.
+
+It always uses your latest code in `ai/`: save a file and ask again, no restart needed.
+
+**In the terminal:**
 
 ```bash
 npm run ai:test                                                  # run all 17 test questions
