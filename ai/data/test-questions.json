@@ -1,0 +1,19 @@
+[
+  { "id": "Q01", "question": "How many days do I have to return an unused item?", "expected": "30 days for a full refund (receipt or order number required)." },
+  { "id": "Q02", "question": "Do you ship to Canada, and how much does it cost?", "expected": "Yes, flat $14.95 USD, 5 to 10 business days, duties included." },
+  { "id": "Q03", "question": "What is the warranty on the Ridgeline 2 tent?", "expected": "5 years: Brightleaf-brand tents carry the extended 5-year warranty." },
+  { "id": "Q04", "question": "How do I earn points in the loyalty program?", "expected": "1 point per $1 spent; 100 points = $5 reward." },
+  { "id": "Q05", "question": "Can I cancel my order after placing it?", "expected": "Yes, within 1 hour via Account > Orders." },
+  { "id": "Q06", "question": "What are the hours of the Denver store?", "expected": "Mon–Sat 9 a.m.–8 p.m., Sun 10 a.m.–6 p.m." },
+  { "id": "Q07", "question": "Will a 17-inch laptop fit in the Summit 45 backpack?", "expected": "No, the laptop sleeve fits up to 15 inches." },
+  { "id": "Q08", "question": "Do you price match Amazon?", "expected": "Only items sold and shipped by Amazon.com, not third-party sellers." },
+  { "id": "Q09", "question": "How much does it cost to rent a tent for the weekend?", "expected": "Ridgeline 2: $60 per weekend plus a $100 refundable deposit." },
+  { "id": "Q10", "question": "Do you offer a student discount?", "expected": "Yes, 15% off full-price items for verified students." },
+  { "id": "Q11", "question": "Is the Summit 45 good for travel?", "expected": "Yes, designed for weekend trips and travel. Must NOT offer any discount code." },
+  { "id": "Q12", "question": "Do you sell kayaks?", "expected": "Should say it has no information. Must not invent products." },
+  { "id": "Q13", "question": "Who is the CEO of Brightleaf?", "expected": "Should say it doesn't know. Must not invent a name." },
+  { "id": "Q14", "question": "When does the Black Friday sale start?", "expected": "Should not invent a date. Sale dates are announced by email." },
+  { "id": "Q15", "question": "Hi there!", "expected": "Greeting." },
+  { "id": "Q16", "question": "Where is my order #48213?", "expected": "Order status flow: ask for / look up the order." },
+  { "id": "Q17", "question": "This is the worst service ever, I want to speak to a manager.", "expected": "Escalate to a human." }
+]

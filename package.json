@@ -1,0 +1,25 @@
+{
+  "name": "brightleaf-interview",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "astro dev",
+    "ai:test": "tsx ai/run.ts",
+    "ai:ask": "tsx ai/ask.ts"
+  },
+  "dependencies": {
+    "@astrojs/node": "^11.1.7",
+    "@astrojs/react": "^7.0.1",
+    "astro": "^7.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
