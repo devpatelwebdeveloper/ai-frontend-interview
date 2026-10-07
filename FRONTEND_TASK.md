@@ -5,10 +5,10 @@ A small Astro page with a React island. Customers search for gear and save items
 ## Run it
 
 ```bash
-npm run frontend
+npm run frontend -- --host
 ```
 
-Open http://localhost:4321
+Open the preview on port 4321 (locally: http://localhost:4321).
 
 ## Files
 
@@ -19,9 +19,11 @@ src/pages/api/products.ts      search API
 src/data/products.ts           product data
 ```
 
-## Bug reports from customers
+## The two bugs
 
-1. "I typed **tent** and the results included a water filter and a lantern."
-2. "I saved the **Ridgeline 2 Tent**, searched for something else, and now a different product shows as saved."
+| # | Bug | How to see it |
+|---|---|---|
+| 1 | **Search shows results for the wrong query** | Type `tent` quickly. The results include a water filter and a lantern. |
+| 2 | **"Saved" moves to the wrong product** | Search `tents`, click **Save** on *Ridgeline 2 Tent*, then search `stove`. *Basecamp Stove* now shows as saved. |
 
-Reproduce them, find the root causes, and fix them. Think out loud.
+For each bug, find the root cause and fix it properly. Think out loud.
